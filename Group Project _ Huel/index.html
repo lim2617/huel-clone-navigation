@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huel</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <div class="nav__bar">
+            <div class="nav__mobileIcon mobileIcon-Top" id="menu_btn">
+                <svg id="menuIcon-hamburger" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg id="menuIcon-cancel" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>                  
+                <span>Menu</span>              
+            </div>
+            <div class="nav__logo">
+                <a title="Huel website, Public domain, via Wikimedia Commons" href="./index.html"><img alt="Huel Official Logo" src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Huel_Official_Logo.png"></a>
+            </div>
+            <div class="nav__mobileIcon mobileIcon-Top">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                </svg>
+                <span>Basket</span>         
+            </div>
+            <ul class="nav__menu" id="nav__menu">
+                <div class="menu__products">
+                    <div class="nav__menuItem" id="products-button">
+                        <li>Products</li>
+                        <svg id="chevron1" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg>
+                    </div>               
+                    <div class="products-content" id="products-content">
+                        <ul class="products__cards-container">
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://huel.imgix.net/media/product/8f12d3b1-e7e9-4a01-b58d-a733b31a855f.png" alt="Build your own bundle">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Build your own Bundle</a>
+                                    <span>Mix and match</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://huel.imgix.net/media/product/5eb7fc57-947d-4a34-b2b6-685766d1e9d7.png" alt="Bestseller Bundle">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Bestseller Bundle</a>
+                                    <span>All our favourite products</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://huel.imgix.net/media/product/b897551c-78af-4335-83b9-317c7ea9bd79.png" alt="Daily Greens">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Daily Greens</a>
+                                    <span>Over 147 health benefits</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://huel.imgix.net/media/product/23712b5c-0e7a-47e7-8094-ec6b958b1890.png" alt="Hot & Savory">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Hot & Savory</a>
+                                    <span>Warm and tasty</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://huel.imgix.net/media/product/28765294-d685-4d07-aaa1-d6cf5d699de4.png" alt="Black Edition">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Black Edition</a>
+                                    <span>High-protein meal</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://huel.imgix.net/media/product/11bf5dea-e19e-4550-a8e9-f590953cf970.png" alt="Ready-to-drink">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Ready-to-drink</a>
+                                    <span>Our favorite</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item">
+                                <div class="products__cards-image">
+                                    <img src="https://cdn.shopify.com/s/files/1/0578/1097/files/Tshirt.png" alt="Clothing">
+                                </div>
+                                <div class="products__cards-text">
+                                    <a href="#">Clothing</a>
+                                    <span>Ethically made sustainable clothing</span>
+                                </div>
+                            </li>
+                            <li class="products__cards-item products__find-your-huel">
+                                <div>
+                                    <a href="#">Which Huel is right for me?</a>
+                                    <p>Find your perfect Huel</p>
+                                </div>
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                                </svg>                            
+                            </li>
+                        </ul>
+                        <div class="all-products-link">
+                            <a href="#">All Huel Products</a>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12.75 15l3-3m0 0l-3-3m3 3h-7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>                          
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__nutrition">
+                    <div class="nav__menuItem" id="nutrition-button">
+                        <li >Nutrition</li>   
+                        <svg id="chevron2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                        </svg> 
+                    </div>
+                    <ul class="nutrition-content" id="nutrition-items">
+                        <li>Daily Greens</li>
+                        <li>Hot & Savory</li>
+                        <li>Powder</li>
+                        <li>Black Edition</li>
+                        <li>Essential</li>
+                        <li>Ready-to-drink</li>
+                        <li>Bar</li>
+                        <li>Complete Protein</li>
+                        <li>Complete Protein Bar</li>  
+                    </ul>
+                </div>                 
+                <div class="nav__menuItem">
+                    <li>Sustainability</li>
+                </div>
+                <div class="nav__menuItem">
+                    <li>About</li>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg> 
+                </div>
+                <div class="nav__menuItem">
+                    <li>Guides & Articles</li>
+                </div>
+                <!-- the three icons on bottom of mobile screen -->
+                <div class="nav__mobileBottom">
+                    <div class="nav__mobileIcon mobileIcon-Bottom" id="mobile-searchBtn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                        </svg>   
+                        <span>Search</span>         
+                    </div>
+                    <div class="search__wrapper" id="mobile-search">
+                        <form class="search__bar" id="mobile-searchBar" action="">
+                            <input class="search__input" id="mobile-searchInput" type="text" placeholder="Enter your search terms...">
+                        </form>
+                    </div>
+                    <div class="nav__mobileIcon mobileIcon-Bottom">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                        </svg> 
+                        <span>Account</span>         
+                    </div>
+                    <div id="mobile-flagIcon" class="nav__flag nav__mobileIcon mobileIcon-Bottom">
+                        <img src="https://vectorflags.s3.amazonaws.com/flags/us-square-01.png" alt="">
+                        <span>Language</span>   
+                    </div>   
+                </div>
+                <div class="backdrop"></div>
+            </ul>
+            <!-- the four icons on top right of desktop screen -->
+            <div class="nav__desktopIconWrapper">
+                <div id="desktop-flagIcon" class="nav__flag nav__desktopIcon">
+                    <img src="https://vectorflags.s3.amazonaws.com/flags/us-square-01.png" alt="">
+                </div>
+                <div class="nav__desktopIcon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                    </svg>              
+                </div>
+                <div class="nav__desktopIcon search-btn" id="search-btn1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>           
+                </div>
+                <div class="nav__desktopIcon">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="search__wrapper" id="search-wrapper">
+            <form class="search__bar" action="">
+                <input class="search__input" type="text" placeholder="Enter your search terms...">
+                <div class="search__aside">
+                    <span>Hit enter to search</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                </div>
+            </form>
+        </div>
+        <div class="backdrop" id="backdrop"></div>
+        
+        <div class="stores-location" id="stores-location" >
+            <svg id="cancel-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <div class="all-stores">
+                <h1>All Stores</h1>
+                
+                <h2>Suggested location</h2>
+                <div class="countries-grid">
+                    <div class="countries">
+                        <img class="stores__flag" src="https://flagdownload.com/wp-content/uploads/Flag_of_Malaysia_Flat_Square-1024x1024.png" alt="Malaysia Flag">
+                        <div class="stores__country">
+                            <h5>Malaysia</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Africa</h2>
+                <div class="countries-grid">
+                    <div class="countries">
+                        <img class="stores__flag" src="data:image/png;base64,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" alt="South Africa Flag">
+                        <div class="stores__country">
+                            <h5>South Africa</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Americas</h2>
+                <div class="countries-grid">
+                    <div class="countries">
+                        <img class="stores__flag" src="data:image/png;base64,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" alt="Bermuda Flag">
+                        <div class="stores__country">
+                            <h5>Bermuda</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                    <div class="countries">
+                        <img class="stores__flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Brazilian_flag_icon_square.svg/768px-Brazilian_flag_icon_square.svg.png" alt="Brazil Flag">
+                        <div class="stores__country">
+                            <h5>Brazil</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                    <div class="countries">
+                        <img class="stores__flag" src="data:image/png;base64,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" alt="US Flag">
+                        <div class="stores__country">
+                            <h5>United States</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Asia</h2>
+                <div class="countries-grid">
+                    <div class="countries">
+                        <img class="stores__flag" src="https://vectorflags.s3.amazonaws.com/flags/hk-square-01.png" alt="Hong Kong Flag">
+                        <div class="stores__country">
+                            <h5>Hong Kong</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                    <div class="countries">
+                        <img class="stores__flag" src="data:image/png;base64,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" alt="India Flag">
+                        <div class="stores__country">
+                            <h5>India</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                    <div class="countries">
+                        <img class="stores__flag" src="https://vectorflags.s3.amazonaws.com/flags/jp-square-01.png" alt="Japan Flag">
+                        <div class="stores__country">
+                            <h5>Japan</h5>
+                            <span>(日本語)</span>
+                        </div>
+                    </div>
+                    <div class="countries">
+                        <img class="stores__flag" src="https://vectorflags.s3.amazonaws.com/flags/sg-square-01.png" alt="Singapore Flag">
+                        <div class="stores__country">
+                            <h5>Singapore</h5>
+                            <span>(English)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <img src="https://t4.ftcdn.net/jpg/00/97/58/97/360_F_97589769_t45CqXyzjz0KXwoBZT9PRaWGHRk5hQqQ.jpg" alt="">
+
+<script src="./main.js"></script>
+</body>
+</html>
